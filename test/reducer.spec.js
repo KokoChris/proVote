@@ -11,6 +11,7 @@ describe('reducer', () => {
             entries: ['Trainspotting']
         }));
     })
+    //  test failing, need to check fromJS
     // it('handles NEXT', () => {
     //     const initialState = fromJS({
     //         entries: ['Trainspotting', '28 Days Later']
