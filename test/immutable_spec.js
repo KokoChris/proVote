@@ -36,6 +36,8 @@ describe('immutability', () => {
 
     describe('a tree', () => {
         function addOneToMap(currentState, newThing) {
+            //below statement can be written with immutable update method
+            // --> .update('somethings' , somethings => somethings.push(newThing))
             return currentState.set(
                 'someThings',
                 currentState.get('someThings').push(newThing)
@@ -60,5 +62,6 @@ describe('immutability', () => {
                 )
             }))
         });
+        
     });
 })
